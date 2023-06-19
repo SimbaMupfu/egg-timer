@@ -16,29 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How do you like your eggs?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcc-Rc-qHr">
-                                <rect key="frame" x="91" y="153" width="208" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcc-Rc-qHr">
+                                <rect key="frame" x="91" y="153" width="208" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="axI-MJ-3PA">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="axI-MJ-3PA">
                                 <rect key="frame" x="19.666666666666657" y="319" width="351" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXW-sX-V9g">
                                         <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Soft"/>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQz-AL-4cW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEc-Ed-NPS">
                                         <rect key="frame" x="132.66666666666669" y="0.0" width="85.666666666666686" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Medium"/>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KiZ-mv-e2n"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw7-CY-EOt">
                                         <rect key="frame" x="265.33333333333331" y="0.0" width="85.666666666666686" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Hard"/>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3N-yD-7JR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -47,6 +56,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lcc-Rc-qHr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4l-CQ-z6c"/>
+                            <constraint firstItem="axI-MJ-3PA" firstAttribute="top" secondItem="lcc-Rc-qHr" secondAttribute="bottom" constant="145.66999999999999" id="Tro-J9-Pnd"/>
+                            <constraint firstItem="lcc-Rc-qHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="cHH-KO-TuP"/>
                             <constraint firstItem="axI-MJ-3PA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPb-nt-Jxb"/>
                         </constraints>
                     </view>
